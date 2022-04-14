@@ -4,3 +4,9 @@ body {
     color: black;
 }
 
+#quiz {
+    display: flexbox;
+    flex: content;
+    background-color: aquamarine;
+    
+}

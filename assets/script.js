@@ -32,12 +32,12 @@ var quizQuestions = [
             4: 'An array is a list of items with single variables.'
         },
         correctAnswer: '3: Arrays are objects that are resizable and able to contain different data types.'
-    },
-]
+    }
+];
 
 function generateQuiz(questions, quizBox, resultsBox, submitButton) {
     function showQuestions(questions, quizBox){
-        //code to follow
+       var output = [];
     }
 
     function showResults(questions, quizBox, resultsBox) {
