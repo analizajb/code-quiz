@@ -35,13 +35,53 @@ var quizQuestions = [
     }
 ];
 
+
 function generateQuiz(questions, quizBox, resultsBox, submitButton) {
     function showQuestions(questions, quizBox){
        var output = [];
+       var answers;
+
+       for(var i=0; i<questions.length; i++){
+           answers = [];
+           for(number in questions [i].answers){
+               answers.push(
+                   '<label>'
+                   + '<input type="radio" name="question'+i+'" value="'+number+'">'
+                   + number + ': '
+                   + questions[i].answers[number]
+                + '</label>'
+               );
+            }
+            
+            output.push(
+             questions[i].question + answers.join('')
+            );
+        }
+
+        quizBox.innerHTML = output.join('');
     }
 
     function showResults(questions, quizBox, resultsBox) {
-        // code to follow
+        var answersContainer = quizBox.querySelectorAll('answers');
+        var userAnswer = '';
+        var numCorrect = 0;
+
+        for(var i=0; i<questions.length; i++){
+            // finds answer
+            userAnswer = (answersContainer[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+            //if correct answer
+            if(userAnswer===questions[i].correctAnswer){
+                //adds to number of correct answers
+                numCorrect++;
+                //color the answers blue
+                answersContainer[i].style.color = 'lightblue';
+            }
+            else{
+                answersContainer[i].style.color = 'red';
+            }
+        }
+
+        resultsBox.innerHTML = numCorrect + ' out of ' + questions.length;
     }
 
     //shows questions
@@ -53,3 +93,21 @@ function generateQuiz(questions, quizBox, resultsBox, submitButton) {
     }
 
 }
+
+//var buttonEl = document.querySelector("#submit");
+//console.log(buttonEl);
+
+// COUNTDOWN TIMER
+//var counter = 10
+//var countdown = function () {
+ //   console.log(counter);
+  //  counter--;
+ //       if(counter === 0){
+ //           console.log("Time's Up!");
+   //         clearInterval(startCountdown);
+ //       };
+//};
+
+//var startCountdown = setInterval(countdown, 1000);
+
+generateQuiz(quizQuestions, quizBox, resultsBox, submitButton);
