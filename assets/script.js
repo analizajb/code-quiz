@@ -68,7 +68,7 @@ function generateQuiz(questions, quizBox, resultsBox, submitButton) {
 
         for(var i=0; i<questions.length; i++){
             // finds answer
-            userAnswer = (answersContainer[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+            userAnswer = (answersContainer[i].querySelector('input[name=question0'+i+']:checked')||{}).value;
             //if correct answer
             if(userAnswer===questions[i].correctAnswer){
                 //adds to number of correct answers
@@ -87,13 +87,12 @@ function generateQuiz(questions, quizBox, resultsBox, submitButton) {
     //shows questions
     showQuestions(questions, quizBox);
 
-    //click event. Submit = shows results
-    submitButton.onclick = function () {
-        showResults(questions, quizBox, resultsBox);
-    }
-
 }
 
+//Submit button
+submitButton.onclick = function () {
+        showResults(questions, quizBox, resultsBox);
+    }
 //var buttonEl = document.querySelector("#submit");
 //console.log(buttonEl);
 

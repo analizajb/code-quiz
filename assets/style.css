@@ -1,12 +1,39 @@
 body {
+    display: flexbox;
+    flex: content;
+    line-height: 200%;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     color: black;
 }
 
 #quiz {
-    display: flexbox;
-    flex: content;
+    border: 3px;
+    border-color: black;
     background-color: rgb(174, 176, 204);
     
+}
+
+.question {
+    font-weight: 600;
+    font-style: italic;
+}
+
+#answers {
+    margin-bottom: 20px;
+}
+
+#submit {
+    font: sans-serif;
+    font-size: 25px;
+    background-color: lightgray;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0 0 20px;
+}
+
+#submit:hover {
+    cursor:pointer;
+    background-color: gray;
 }
