@@ -1,8 +1,8 @@
-const button = document.getElementById('button')
+var button = document.getElementById('button')
 button.innerText = 'Start Quiz',
-button.addEventListener('click', () => {
+button.onclick = function(event) {
      alert('Your quiz starts now!')
- })
+ }
 
 var quizBox = document.getElementById('quiz');
 var resultsBox = document.getElementById('results');
