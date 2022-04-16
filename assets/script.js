@@ -14,49 +14,12 @@ var submitButton = document.getElementById('submit');
  // TIMER
  //document.getElementsByClassName('.timer') {
  //    setInterval = 1000
-//}
-var quizQuestions = [
-     {
-         question: "What does DOM stand for?",
-         answers: {
-             1: 'Display On Machine',
-             2: 'Digital Open Mechanism',
-             3: 'Document On Modem',
-             4: 'Document Object Model'
-         },
-         correctAnswer: '4: Document Object Model'
-     },
-     {
-         question: "Where can JavScript code NOT be placed in an HTML document?",
-         answers: {
-             1: 'In the head section.',
-             2: 'In both the head and body section.',
-             3: 'In the footer section.',
-             4: 'In the body section.'
-         },
-         correctAnswer: '3: In the footer section.'
-     },
-     {
-         question: "Select the statement that is true of arrays in Javascript",
-         answers: {
-             1: 'Arrays are used to organize content within a list element.',
-             2: 'Arrays are elements that are resizable and able to contain different data types.',
-             3: 'Arrays are objects that are resizable and able to contain different data types.',
-             4: 'An array is a list of items with single variables.'
-         },
-         correctAnswer: '3: Arrays are objects that are resizable and able to contain different data types.'
-     },
-     {
-        question: "Fixed values are called...",
-        answers: {
-            1: 'Fixated.',
-            2: 'Literals.',
-            3: 'Values.',
-            4: 'JavaScript.'
-        },
-        correctAnswer: '2: Literals.'
-    },
- ];
+
+
+
+//var quizQuestions = [
+     
+  
  
  
 function generateQuiz(questions, quizBox, resultsBox, submitButton) {
