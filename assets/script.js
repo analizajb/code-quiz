@@ -45,7 +45,17 @@ var quizQuestions = [
              4: 'An array is a list of items with single variables.'
          },
          correctAnswer: '3: Arrays are objects that are resizable and able to contain different data types.'
-     }
+     },
+     {
+        question: "Fixed values are called...",
+        answers: {
+            1: 'Fixated.',
+            2: 'Literals.',
+            3: 'Values.',
+            4: 'JavaScript.'
+        },
+        correctAnswer: '2: Literals.'
+    },
  ];
  
  

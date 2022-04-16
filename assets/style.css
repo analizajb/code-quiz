@@ -25,7 +25,7 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: bold;
     transition-duration: 0.4s;
 }
@@ -73,8 +73,8 @@ h1 {
 #submit {
     font: sans-serif;
     font-size: 25px;
-    background-color: lightgray;
-    color: black;
+    background-color: #4CAF50;
+    color: white;
     border-radius: 5px;
     padding: 10px;
     margin: 20px 0 0 20px;
@@ -82,5 +82,20 @@ h1 {
 
 #submit:hover {
     cursor:pointer;
-    background-color: gray;
+    background-color:#3d8540;
+}
+form {
+    display: inline-block;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: darkgray;
+    border: 3px solid gray;
+    margin: 10px;
+}
+
+input {
+    margin: 10px;
+    padding: 0;
+    border: 2px solid gray;
 }

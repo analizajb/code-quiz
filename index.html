@@ -11,8 +11,10 @@
  <button id="button" type="start" onclick="generateQuiz()">Start Quiz</button>
  <!-- TIMER -->
  <div class="timer">
-    <p>Time Remaining: </p>
-  </div>
+     <p id="timer">Time Remaining: </p>
+         <span id="timer-mins"></span>
+         <span id="timer-secs"></span>
+ </div>
  <!-- QUIZ HERE -->
  <div id="quiz" class="question"></div>
  <button id="submit" class="ans-btn" type="submit">Submit</button>
@@ -26,7 +28,8 @@
      <label for="fname">First name:</label><br>
      <input type="text" id="fname" name="fname"><br>
  </form>
+ <script src="./assets/script.js"></script>
 </body>
 
-<script src="./assets/script.js"></script>
+
 </html>
