@@ -1,7 +1,17 @@
+const button = document.getElementById('button')
+button.innerText = 'Start Quiz',
+button.addEventListener('click', () => {
+     alert('Your quiz starts now!')
+ })
+
 var quizBox = document.getElementById('quiz');
 var resultsBox = document.getElementById('results');
 var submitButton = document.getElementById('submit');
 
+// TIMER
+//document.getElementsByClassName('.timer') {
+//    setInterval = 1000
+//}
 var quizQuestions = [
     {
         question: "What does DOM stand for?",
@@ -89,10 +99,12 @@ function generateQuiz(questions, quizBox, resultsBox, submitButton) {
 
 }
 
-//Submit button
+//Submit button - NOT WORKING
 submitButton.onclick = function () {
         showResults(questions, quizBox, resultsBox);
     }
+
+
 //var buttonEl = document.querySelector("#submit");
 //console.log(buttonEl);
 
@@ -110,3 +122,19 @@ submitButton.onclick = function () {
 //var startCountdown = setInterval(countdown, 1000);
 
 generateQuiz(quizQuestions, quizBox, resultsBox, submitButton);
+
+//Create variables to store the quiz questions
+
+//Use mouse-click events to start the quiz
+
+//Write for loops to cycle through quiz questions
+
+//Use key-press events to receive user input in the form of answers to quiz questions
+
+//Create a time limit for the game using time functions
+
+//Write conditional statements to determine wrong and right answers
+
+//Use client-side storage to store high scores
+
+//Use GitHub Pages to publish the page to the web
